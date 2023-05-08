@@ -8,7 +8,7 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="btnNine">
         <TextBlock x:Name="txtNumber" HorizontalAlignment="Left" Margin="245,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="501" Height="48" FontSize="36"/>
-        <Button x:Name="btnClear" Content="AC" HorizontalAlignment="Left" Margin="53,142,0,0" VerticalAlignment="Top" Width="90" Height="48" Click="btnClear_Click"/>
+        <Button x:Name="btnClear" Content="AC" HorizontalAlignment="Left" Margin="53,118,0,0" VerticalAlignment="Top" Width="90" Height="48" Click="btnClear_Click"/>
         <Button x:Name="btnSeven" Content="7" HorizontalAlignment="Left" Margin="261,149,0,0" VerticalAlignment="Top" Height="34" Width="53" Click="btnSeven_Click"/>
         <Button x:Name="btnEight" Content="8" HorizontalAlignment="Left" Margin="400,149,0,0" VerticalAlignment="Top" Height="34" Width="53" RenderTransformOrigin="1.547,0.577" Click="btnEight_Click"/>
         <Button x:Name="btnDivide" Content="/" HorizontalAlignment="Left" Margin="678,149,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.503,0.291" Width="53" Height="34" Click="btnDivide_Click"/>
@@ -25,8 +25,8 @@
         <Button x:Name="btnAdd" Content="+" HorizontalAlignment="Left" Margin="678,363,0,0" VerticalAlignment="Top" Width="53" Height="34" Click="btnAdd_Click"/>
         <Button x:Name="btnOne" Content="1" HorizontalAlignment="Left" Margin="261,292,0,0" VerticalAlignment="Top" Height="34" Width="53" Click="btnOne_Click_1"/>
         <Button x:Name="btnNine1" Content="9" HorizontalAlignment="Left" Margin="545,149,0,0" VerticalAlignment="Top" Width="54" Height="34" Click="btnNine1_Click"/>
-        <Button Content="&lt;&lt;" HorizontalAlignment="Left" Margin="53,249,0,0" VerticalAlignment="Top" Height="48" Width="90"/>
-        <Button Content="%" HorizontalAlignment="Left" Margin="53,363,0,0" VerticalAlignment="Top" Height="48" Width="90"/>
+        <Button x:Name="btnsetback" Content="&lt;&lt;" HorizontalAlignment="Left" Margin="53,222,0,0" VerticalAlignment="Top" Height="48" Width="90" Click="btnsetback_Click"/>
+        <Button x:Name="btnpercent" Content="%" HorizontalAlignment="Left" Margin="53,334,0,0" VerticalAlignment="Top" Height="48" Width="90" Click="btnpercent_Click"/>
 
     </Grid>
 </Window>

@@ -26,6 +26,7 @@ namespace Calculator
         public MainWindow()
         {
             InitializeComponent();
+            btnpercent.Click += btnpercent_Click;
         }
 
         private void btnOne_Click_1(object sender, RoutedEventArgs e)
@@ -124,6 +125,24 @@ namespace Calculator
             firstNumber = Convert.ToSingle(txtNumber.Text); //將輸入文字框轉換成浮點數，存入第一個數字的全域變數
             txtNumber.Text = "0"; //重新將輸入文字框重新設定為0
             operators = _operator; //選擇「加」號
+        }
+
+
+        private void btnsetback_Click(object sender, RoutedEventArgs e)
+        {
+            string input = txtNumber.Text;
+            if (!string.IsNullOrEmpty(input))
+            {
+                input = input.Substring(0, input.Length - 1);
+                txtNumber.Text = input;
+            }
+        }
+
+        private void btnpercent_Click(object sender, RoutedEventArgs e)
+        {
+            float number = Convert.ToSingle(txtNumber.Text);
+            float result = number / 10;
+            txtNumber.Text = string.Format("{0:0.##########}", result);
         }
 
         private void btnEqual_Click(object sender, RoutedEventArgs e)
